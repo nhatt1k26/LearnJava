@@ -1,6 +1,6 @@
-Overview: This is repo that I've learn knowledge about Java
+Overview: This is repo that I've learned knowledge about Java
 
-Outline of Repo consist of 8 Chapter:
+Outline: Repo consists of 12 Chapter:
 
 1. Introduction
 2. Basics
