@@ -71,5 +71,4 @@ public class JavaOOP {
         //method 5: Using factory method
         MyClass myObject5 = MyClass5.createObject();
     }
-
 }

@@ -38,6 +38,10 @@ Function of Three main blocks:
 2. Runtime Data Area: The Runtime Data Area in Java refers to the memory areas used by the Java Virtual Machine (JVM) to execute Java programs. These areas store various data structures and buffers required for the execution of Java code.
 3. Execution Engine: The Execution Engine is responsible for executing the bytecode instructions. It interprets the bytecode or may use Just-In-Time (JIT) compilation techniques to dynamically compile frequently executed bytecode into native machine code for improved performance.
 
+JVM arichecture
+
+[https://www.geeksforgeeks.org/jvm-works-jvm-architecture/]()
+
 ### Class loader
 
 ![1684398835029](image/README/1684398835029.png)

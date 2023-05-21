@@ -177,9 +177,12 @@ When do we use wrapper class:
   }
   ```
 
+  Note: instanceof error is compiler error, not runtime error.
+
   + Downcasting with instance of (????)
 
   ```java
+
   class Animal {
   // Animal class implementation
   }
