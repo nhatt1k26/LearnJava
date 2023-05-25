@@ -1,14 +1,15 @@
 public class JavaGarbage {
     public static void main(String[] args) {
-        // Create objects
-        MyClass obj1 = new MyClass();
-        MyClass obj2 = new MyClass();
-
-        // Assign obj2 to obj1, obj1 no longer references the original object
+        // Nulling the reference
+        MyClass obj1 = new MyClass(1);
         obj1 = null;
 
-        // Assign null to obj2, obj2 no longer references the original object
-        obj2 = null;
+        //By assigning a reference to another
+        MyClass obj2 = new MyClass(2);
+        obj2 = obj1;
+
+        //anonymous object
+        new MyClass(3);
 
         // Request garbage collection
         System.gc();
@@ -26,14 +27,16 @@ public class JavaGarbage {
 }
 
 class MyClass {
+    int id;
     // Constructor
-    public MyClass() {
-        System.out.println("Creating an object.");
+    public MyClass(int id) {
+        this.id = id;
+        // System.out.println("Creating an object.");
     }
 
     // Finalize method
     @Override
     protected void finalize() throws Throwable {
-        System.out.println("Finalizing an object.");
+        System.out.println("Finalizing an object" + id);
     }
 }

@@ -4,19 +4,18 @@ class MyClass{
     private int b;
     private int c;
     public MyClass(int a){
-        this(a,0,0);
         System.out.println("Construtor with one parameter.");
+        this(a,0,0);
     }
     public MyClass(){
         System.out.println("Null-Construtor is call");
     }
     public MyClass(int a,int b,int c){
-        this.a =a;
+        this.a=a;
         this.b=b;
         this.c=c;
         System.out.println("Construtor with three parameter.");
     }
-    
 }
 
 // Invoke current class method:

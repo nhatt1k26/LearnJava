@@ -4,7 +4,7 @@ Java was first introduced by James Gosling, a technology engineer of Sun Microsy
 
 ## What is Java programming language used for?
 
-Java is consider as programming langue for develope  android app. It suit for software like Android aStudio and Kotlin.
+Java is considered as programming langue for develope  android app. It suit for software like Android aStudio and Kotlin.
 
 ## Why is Java such a popular choice among modern-day software developers?
 
@@ -27,6 +27,17 @@ We use IDE to programming code and save as .java file. Java file will be complie
 ### JDK, JRE and JVM
 
 ![1684378234683](image/README/1684378234683.png)
+JDK contains JRE and development kit, overtake a mission provide fully environment and dev tools for programmer to easily development and deploy new proj.
+Development tool contain remark following component:
+- javac: the compiler take input is source code with Java language into execute file be implemented in JVM.
+- java: interpret Javacode to Bytecode. Bytecode is just a intermediate language. JVM through byte will interpret into machine code to run on real Machine.
+- Archive: usually be used to compress file class
+- jdb: debugger
+- javadoc: Dev Tool
+- Appleviewer: Interpreter, execute applet . Rmic, rmicregistry.
+
+JRE encompass files are used by JVM to execute and necessary libraries like: java.lang, java.util.
+
 
 ### JVM Architecture
 

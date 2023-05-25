@@ -37,8 +37,7 @@ public class JavaOOP {
             MyClass myObject1 = MyClass.class.newInstance();
         } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
-        }
-        ;
+        };
 
         // method 3: clone() method
         try {

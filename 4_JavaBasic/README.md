@@ -204,6 +204,9 @@ When do we use wrapper class:
 + 2 steps to create an array: declare and allocate memory to array
 + Multi dimensional array:
   + int [][] arr = new int[3][3];
++ Fixed size,
++ Các ô nhớ phải liền kề nhau các phần tử liên kết với nhau
++ Index -> Truy xuất vào phần
 
 ## This keyword
 
@@ -220,6 +223,8 @@ Function of This keyword:
   ![1684572901087](image/README/1684572901087.png)
 + Pass as an argument in the constructor call
 + Return the current class instance
++ Constructor call must be the first statement in a constructor  (?????)
++ 
 
 ## Super keyword
 

@@ -1,5 +1,18 @@
 ## Java OOPs
 
+### What is OOP
+
+- OOP stand for Object-Oriented-Programming. Its programming organize code around objects, which is instance of Class
+- In practical, objects represent to real-world entities or concepts
+- Each entities will be encapsulated with some properties and method
+
+### Why do we need oop?
+
+The organization with OOP approach will help we in many different use cases:
+
+- Modularity and Reusability: OOP approach will devide code into object. This make OOP code easier to maintain, debug, and reuse code. Each class will be declared only once.
+  => Reducing redundancy and increasing efficiency. Easier to maintenance, troubleshooting, reuse code.
+
 ### Object
 
 1. Object is a representation in the real world, such as: myself, Obama president, ....
@@ -13,10 +26,10 @@
    - Has no reference
    - Can only be use at the time of create obj.
    - **Example: new MyClass();**
-4. Component of Object:
-   - Identity
-   - State (Atributes)
-   - Behaviour (Methods)
+4. **Component of Object:**
+   - **Identity**
+   - **State (Atributes)**
+   - **Behaviour (Methods)**
 
 ### Class
 
@@ -47,7 +60,6 @@
       }
 
       ```
-
     - Static Initialization Block: itialize static variables or perform static setup operations
 
       ```java
@@ -66,8 +78,8 @@
       }
 
       ```
-
     - Method Block
+
       ```java
       class MyClass {
       void myMethod() {
@@ -81,14 +93,15 @@
       }
       }
       ```
-
 - Nested Class & Interface
 
 ### Constructor
 
+**Constructor in Java is a special method that is used to initialize objects. **The constructor is called when an object of a class is created. It can be used to set initial values for object attributes.****
+
 1. How Constructors are Different From Methods in Java?
 
-- Constructors must have the same name as the class within which it is defined it is not necessary for the method in Java.
+- Constructors must have the same name as the class.
 - Constructors do not return any type while method(s) have the return type or void if does not return any value.
 - Constructors are called only once at the time of Object creation while method(s) can be called any number of times.
 
@@ -145,3 +158,20 @@ Definition and Some properties
 - A final variable that is not initialized at the time of declaration is called an empty final variable. It can only be initialized in the Constructor.
 - If you declare any parameter as final, then you cannot change its value.
 - Final method: Inherited subclasses will not be able to override this method
+
+
+Class A 
+
+2 thuộc tính 
+
+2 getter , 2 setter
+
+1 constructor đầy đủ tham số
+
+main
+
+tạo một instance
+
+a = new A()
+
+setter 2 thuộc tính
