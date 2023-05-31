@@ -49,8 +49,8 @@ public class BuilderVsBuffer {
         //String buffer operator
         StringBuilder sb = new StringBuilder(20);
         sb.append("Hello");
-         sb.insert(5, "Java");
-         sb.insert(1, "Java");
+        sb.insert(5, "Java"); // Can be override
+        sb.insert(1, "Java");
         //  sb.insert(4, "nasdnjasdn");
         System.out.println(sb);
     }

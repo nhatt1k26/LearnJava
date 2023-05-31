@@ -30,6 +30,41 @@ Issue 1:
 
 ### Reasons why we use `this` in the first line of a constructor:
 
-This ensures that the necessary initialization steps are performed before executing the specific code in the current constructor.
+The parent class' constructor needs to be called before the subclass' constructor. This will ensure that if you call any methods on the parent class in your constructor, the parent class has already been set up correctly.
 
-Need to
+## Meeting note 25/5
+
++ Naming Conventions:
+
+  + Class Names:
+
+    + Start with an uppercase letter.
+    + Use nouns or noun phrases that describe the class's purpose.
+    + Avoid using underscores; instead, use camel case (e.g., `MyClass`).
+  + Constant Names:
+
+    + Use uppercase letters for the entire name
+    + Separate words with under scores: Max Values
+  + Method Name:
+
+    + Start with lowercase letter
+    + Use verb or verb phrase decribe the method's action
+    + Use camel case instead of using under score
+  + Pakage Name: Use lowercase letter
+
+    + Use a reversed domain name to ensure uniqueness
+  + Acronyms and Abbreviations:
+
+    + Acronyms should be treated as words (e.g., `XMLParser`).
+    + Abbreviations should be avoided or used sparingly.
++ Upcasting, downcasting
+
+  + Assign subclass variable for supperclass reference variable
+  + Downcasting: assign object of supperclass for subclass reference variable
+
++ Static Method - Static void Main
+
++ Static vs Dynamic Binding in Java
+In Java static binding refers to the execution of a program where type of object is determined/known at compile time i.e when compiler executes the code it know the type of object or class to which object belongs.While in case of dynamic binding the type of object is determined at runtime.
+  + When type of the object is determined at run-time, it is known as dynamic binding.
+  + When type of the object is determined at compile-time, it is known as static binding.

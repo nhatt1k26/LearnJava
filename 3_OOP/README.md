@@ -147,11 +147,6 @@ Definition and Some properties
   Static methods cannot use non-static variables or call non-static methods directly.
   this and super keywords cannot be used in a static context.
 
-### Static Class
-
-- A class can be made static only if it is a nested class.
-- A nested static class can be accessed without an object of the outer class.
-
 ### Final Variable
 
 - In Java, a final variable can be declared with the final keyword, and then you won't be able to change the value of the final variable (a constant).
@@ -159,19 +154,35 @@ Definition and Some properties
 - If you declare any parameter as final, then you cannot change its value.
 - Final method: Inherited subclasses will not be able to override this method
 
+## Is-a and has-a relationship
 
-Class A 
++ Is-a relationship:
+  + based on inheritance
+  + It represents an "is a kind of" or "is a type of" relationship
+  + Achieve through extends keyword
++ Have-a relationship:
+  + Based on composition(Không tồn tại được nếu không tồn tại cha) or aggregation (Tồn tại độc lập )
+  + It represents a "has a" or "contains a" relationship
+  + Achieve through entity reference inside a class
 
-2 thuộc tính 
+Both is used for code reusability
 
-2 getter , 2 setter
+Phụ thuộc vào Access Modifier, Composition 
 
-1 constructor đầy đủ tham số
+Composition - aggregation có thể hiện trong java code giống nhau.
 
-main
+### Static Class
 
-tạo một instance
+- Is Used for better memory management
+- Static keyword belongs to the class, not to the instance of the class
+- A class can be made static only if it is a nested class.
+- A nested static class can be accessed without an object of the outer class. q2
 
-a = new A()
+### Comparing objects operator
 
-setter 2 thuộc tính
+- Equals method: compare the equality of two objects based on their content rather than their memory address
+- The hashCode method
+  + Obtain a hash value (an integer) that represents the object's state.
+  + purpose: support efficient storage and retrieval of objects in hash-based data structures (HashMap or HashSet).
+  + If a.equals(b) == true then hashCode(a) == hashCode(b)
+- The == operator is used to compare object references for equality.

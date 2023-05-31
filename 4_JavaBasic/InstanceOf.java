@@ -9,7 +9,6 @@ class Vehicle {
 }
 
 class VinFast {
-
 }
 
 public class InstanceOf {

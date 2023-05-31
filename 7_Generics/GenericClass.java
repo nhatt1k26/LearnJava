@@ -2,6 +2,9 @@ class KeyValuePair<K, V> {
     private K key;
     private V value;
 
+    public KeyValuePair() {
+    }
+
     public KeyValuePair(K key, V value) {
         this.key = key;
         this.value = value;
@@ -34,14 +37,35 @@ class ContactEntry extends KeyValuePair<String, Integer> {
 }
 
 class ContactEntry2<V> extends KeyValuePair<String, V> {
+    public V data;
+    public ContactEntry2() {
+        super();
+    }
+    public ContactEntry2(V value) {
+        super();
+        data = value;
+    }
     public ContactEntry2(String key, V value) {
         super(key, value);
     }
+    
+
+    public String CheckType(){
+        // we can use getSimpleName for the sort form of DataType
+        return  data.getClass().getName(); 
+            // return "V is Integer";
+            // else 
+            // return "V is not Integer";
+    }
 }
 
-class ContactEntry3<K, V> extends KeyValuePair<K, V> {
+class ContactEntry3<S, V> extends KeyValuePair<K, V> {
     public ContactEntry3(K key, V value) {
         super(key, value);
+    }
+
+    public void CommonOperator(V a1, V a2){
+        a1 === a2;
     }
 }
 
@@ -72,5 +96,7 @@ public class GenericClass {
         String Key = entry.getKey();
         String Value = entry.getValue();
         System.out.println("Key: " + Key + "\nValue: " + Value);
+        ContactEntry2<Integer> a = new ContactEntry2<Integer>(123);
+        System.out.println(a.CheckType());
     }
 }
