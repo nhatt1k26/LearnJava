@@ -1,7 +1,6 @@
 package GExeption;
 
 public class MyClass {
-
         int x = 10;
         public MyClass(int x) {
             this.x = x;

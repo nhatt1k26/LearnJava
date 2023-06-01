@@ -1,8 +1,6 @@
 package FCollection;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 public class LinkedHashMapExample {
     public static void main(String[] args) {
@@ -13,7 +11,6 @@ public class LinkedHashMapExample {
         myHash.put("Alice4","amyvalue4");
         myHash.put("Alice5","amyvalue5");
         myHash.put("Alice6","amyvalue6");
-
 
         //Compare Map vs HashMap
         HashMap<String,Integer> newMap = new HashMap<>();
