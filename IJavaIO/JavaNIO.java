@@ -15,9 +15,8 @@ public class JavaNIO {
 //                If the destination directory already exists it will throw FileAlreadyExistsException.
 //                If there is any IO error then it will throw IOException.
        // System.out.println("haha");
-        Path path = Paths.get("/hoem2/document");
+        Path path = Paths.get("G:\\mycreate");
         System.out.println(path);
-        //Files.createDirectories(path); //Compile error: unreported exception java.io.IOException;
         try{
             Files.createDirectories(path);
             System.out.println("Diretory is created");

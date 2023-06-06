@@ -5,21 +5,20 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class CustomCheckException {
-//    public static void main(String[] args) {
-//        String fileName = "newfile.txt";
-//        try (Scanner file = new Scanner(new File(fileName))) {
-//            if (file.hasNextLine())
-//                System.out.println(file.nextLine());
-//
-//        } catch (FileNotFoundException e) {
-//            if (!isCorrectFileName(fileName)) {
-//                throw new IncorrectFileNameException("Incorrect filename: " + fileName);
-//            }
-//        }
-//    }
-//
-//    public static boolean isCorrectFileName(String str) {
-//        return str.length() >= 10;
-//    }
-
+    public static void main(String args[]) {
+        try {
+            int a[] = new int[5];
+            a[5] = 30 / 0;
+        }
+        catch (ArithmeticException e) {
+            System.out.println("common task completed");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("task 2 completed");
+        }
+        catch (Exception e) {
+            System.out.println("task1 is completed");
+        }
+        System.out.println("rest of the code...");
+    }
 }

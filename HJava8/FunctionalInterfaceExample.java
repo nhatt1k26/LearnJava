@@ -2,6 +2,7 @@ package HJava8;
 @FunctionalInterface
 interface FI1{
     void doSomething();
+//    void doSomethingAndSomeone();
 }
 @FunctionalInterface
 interface FI2{
@@ -13,7 +14,7 @@ interface FI2{
 public class FunctionalInterfaceExample {
     public static void main(String[] args) {
 
-        FI1 instance1 = ()->{
+        FI1 instance1 = ()-> {
             System.out.println("hello World");
         };
 
@@ -29,8 +30,8 @@ public class FunctionalInterfaceExample {
                 return 12323;
             }
         };
-        instance1.doSomething();
 
+        instance1.doSomething();
         instance2.doSomething();
         System.out.println("Boolean result " + instance2.toString());
         //instance.toString();

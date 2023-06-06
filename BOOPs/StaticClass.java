@@ -2,6 +2,7 @@ package BOOPs;
 public class StaticClass {
     private String subject;
     public StaticClass(String subject) {
+
         this.subject = subject;
     }
     //nested class

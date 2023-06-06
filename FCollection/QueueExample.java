@@ -2,6 +2,8 @@ package FCollection;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class QueueExample {
     public static void main(String[] args) {
@@ -24,7 +26,5 @@ public class QueueExample {
         System.out.println(myQueue.element());
         myQueue.remove();
         System.out.println(myQueue.element());
-
-
     }
 }

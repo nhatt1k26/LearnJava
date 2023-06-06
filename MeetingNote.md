@@ -104,4 +104,67 @@ May contain duplicate elements.
 Maintains the order of elements added.
 Asynchronous (non-synchronized).
 
+Utilities Class - Helper Class
++) Class that have Utilities Method
++) For collection interface
++) 
+
+**Map is not inherit in java collection, but provide collection-view operation for user to program easier**
+
+
 HashSet - HashCode
+
+## Meeting note 6/5/2023
+
+Java Reflection.
+HashMap? Default Capacity of constructor -> Multiple constructor. 
+loadFactor
+
+Cây đỏ đen
++)  Self balance tree 
++)
+    -> 
++)  
+
++) Key-value
+    Tại sao cần dummy value ->
+    Mọi hoạt động của map chủ yếu dựa vào Key, giá trị value không quan trọng
+
+
+ArrayList:
++) Index Data Structure
++) update the 
++) Basically
+
+Exception looping Manipulate:
++) example : for each -> đẩy ra Exception
+
+Khắc phục: sử dụng iterator.
+
+remove:(ko dùng phương thức của collection)
+
+Throw/ throws 
+explitcity handle exception
+
+throw check-> phải xử lý ngay tại thời điểm compile time
+
+throws -> có ther throw cả checked và unchecked exception
+
+
+Custom exception
+-> runtime exception
+
+Exception handling with overriding
+
+Các thành phần làm việc với nhau dưới dạng byte
+-> Cần 1 cơ chế chung đảm bảo việc truyền và nhận dữ liệu từ 2 phía
+
+Class cha implement thì class con không cần.
+
+static + transient  
+
+Mục đích : để nhận biết nhau (trước khi serialize và sau khi deserialize).
+
+
+
+final transient có được ghi hay không 

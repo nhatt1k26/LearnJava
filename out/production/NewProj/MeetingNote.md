@@ -104,4 +104,42 @@ May contain duplicate elements.
 Maintains the order of elements added.
 Asynchronous (non-synchronized).
 
+Utilities Class - Helper Class
++) Class that have Utilities Method
++) For collection interface
++) 
+
+**Map is not inherit in java collection, but provide collection-view operation for user to program easier**
+
+
 HashSet - HashCode
+
+## Meeting note 6/5/2023
+
+Java Reflection.
+HashMap? Default Capacity of constructor -> Multiple constructor. 
+loadFactor
+
+Cây đỏ đen
++)  Self balance tree 
++)
+    -> 
++)  
+
++) Key-value
+    Tại sao cần dummy value ->
+    Mọi hoạt động của map chủ yếu dựa vào Key, giá trị value không quan trọng
+
+
+ArrayList:
++) Index Data Structure
++) update the 
++) Basically
+
+Exception looping Manipulate:
++) example : for each -> đẩy ra Exception
+
+Khắc phục: sử dụng iterator.
+
+remove:(ko dùng phương thức của collection)
+
