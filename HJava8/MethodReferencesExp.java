@@ -53,7 +53,7 @@ public class MethodReferencesExp {
 
         //Types of Method References
         // Reference to a static method
-        Integer value2 = nameMap.computeIfAbsent("NguyenDinhNhat",MyClass::doSomething);
+        Integer value2 = nameMap.computeIfAbsent("Nguyen_Dinh_Nhat",MyClass::doSomething);
         System.out.println(value2);
 
         //Refers to an instance method of a particular object

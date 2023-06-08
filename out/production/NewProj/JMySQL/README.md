@@ -1,38 +1,3 @@
-## Compare difference between SQL vs noSQL
-  SQL:
-  + Use structured data model
-  + Organized data into table with predefined scheme
-  + Each element is stored in SQL as one row, data correspond to each column. 
-  + Relation ships between tables are established using keys and foreign key.
-  + Usually be used for complex relationships and structured data ( transactional systems, relational reporting, and business intelligence)
-noSQL:
-  + variety of data models (key-value,value pairs, document stores, graph databases)
-  + provide more flexible schemas, allowing for dynamic and unstructured data
-  + handling large-scale, rapidly changing, and unstructured data (real-time analytics, content management systems, social networks, and IoT data..).
-
-
-## MySQL Architecture
-Include of three mainly layers:
-+ Client layer
-+ Server layer
-+ Storage layer 
-
-
-1. Utilities Layer consists of utilities that help client server connect, valid the request that be sent to server. Some importance service:
-   + Connection Handling
-   + Authentication
-   + Security
-2. Server Layer:
-  + Take control all the thread was establish to Thread Handling module.
-  + Parser: (Convert the structure and syntax of the SQL statements and transform them into a format that the server can process.)
-    + broken into number of tokens
-    + built a data structure(parse tree) of given input
-  + Optimizer: applied various types of optimization techniques. 
-    +  rewriting the query, order of scanning of tables 
-    +  choosing the right indexes to use etc
-3. Storage Layer:
-   Responsible for storing and retrieving all data stored in MySQL, default is InnoDB.
-
 ## What is RDBMS
 A relational database management system (RDBMS) is 
 + a collection of programs and capabilities that enable IT teams and others to create, update, administer and otherwise interact with a relational database.

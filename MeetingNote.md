@@ -168,3 +168,17 @@ Mục đích : để nhận biết nhau (trước khi serialize và sau khi dese
 
 
 final transient có được ghi hay không 
+
+## Java Predefined-Functional Interfaces
+
+## Meeting note 6/6
+Hidden method
+**implement: final transient**
++ Method 
++ Eager call method 
++ Compare Stream and asd
++ ifPresent
++ isPresent
++ flatmap()
+
+## 

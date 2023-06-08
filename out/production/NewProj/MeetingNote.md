@@ -143,3 +143,40 @@ Khắc phục: sử dụng iterator.
 
 remove:(ko dùng phương thức của collection)
 
+Throw/ throws 
+explitcity handle exception
+
+throw check-> phải xử lý ngay tại thời điểm compile time
+
+throws -> có ther throw cả checked và unchecked exception
+
+
+Custom exception
+-> runtime exception
+
+Exception handling with overriding
+
+Các thành phần làm việc với nhau dưới dạng byte
+-> Cần 1 cơ chế chung đảm bảo việc truyền và nhận dữ liệu từ 2 phía
+
+Class cha implement thì class con không cần.
+
+static + transient  
+
+Mục đích : để nhận biết nhau (trước khi serialize và sau khi deserialize).
+
+
+
+final transient có được ghi hay không 
+
+## Java Predefined-Functional Interfaces
+
+## Meeting note 6/6
+Hidden method
+**implement: final transient**
++ Method 
++ Eager call method 
++ Compare Stream and asd
++ ifPresent
++ isPresent
++ flatmap()
