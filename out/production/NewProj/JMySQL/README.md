@@ -1,3 +1,38 @@
+## Compare difference between SQL vs noSQL
+SQL:
+  + Use structured data model
+  + Organized data into table with predefined scheme
+  + Each element is stored in SQL as one row, data correspond to each column. 
+  + Relation ships between tables are established using keys and foreign key.
+  + Usually be used for complex relationships and structured data ( transactional systems, relational reporting, and business intelligence)
+noSQL:
+  + variety of data models (key-value,value pairs, document stores, graph databases)
+  + provide more flexible schemas, allowing for dynamic and unstructured data
+  + handling large-scale, rapidly changing, and unstructured data (real-time analytics, content management systems, social networks, and IoT data..).
+
+## Compare SQL and mySQL
+SQL stands for Structured Query Language and is a standard language used for managing and manipulating data in relational databases
+MySQL, is a specific relational database management system (RDBMS) that uses SQL as its language.
+
+
+## MySQL Architecture
+Include of three mainly layers:
++ Client layer: applications or programs that communicate with the MySQL server to perform various operations on the database.
+  + Connection Handling
+  + Authentication
+  + Security
++ Server layer : 
+  + Thread Handling: Take control all the thread was established to Thread Handling module.
+  + Parser: (Convert the structure and syntax of the SQL statements and transform them into a format that the server can process.)
+      + broken into number of tokens
+      + built a data structure(parse tree) of given input
+  + Optimizer: applied various types of optimization techniques.
+      +  rewriting the query, order of scanning of tables
+      +  choosing the right indexes to use etc
+  + Output parsing + optimizing stages: query execution plan. This is used by MySQL query execution engine to process the query.
++ Storage layer: Responsible for storing and retrieving all data stored in MySQL, default is InnoDB.
+  + balances, reliability, performance designed for processing  many short-lived transactions.
+
 ## What is RDBMS
 A relational database management system (RDBMS) is 
 + a collection of programs and capabilities that enable IT teams and others to create, update, administer and otherwise interact with a relational database.
@@ -17,13 +52,8 @@ stores and provides access to data points that are related to one another.
 + SQL stands for Structured Query Language and is a standard language used for managing and manipulating data in relational databases
 + MySQL, is a specific relational database management system (RDBMS) that uses SQL as its language.
 
-## MySQL Architecture
+## MySQL query route
 https://www.youtube.com/watch?v=aKOaQfpW7to
-The Architecture of MYSQL contain following major layer’s :
-+ Client
-+ Server
-+ Storage Layer
-+ 
 
 + services of client layer are:
     + When client request to server -> server accept, client is connected -> client get his own thread for its connection -> with this thread all the queries from client side is excecuted
@@ -47,6 +77,10 @@ The Architecture of MYSQL contain following major layer’s :
 Note: storage engine does affect how server optimize the query
 
 ## Entity Relationship
++ is a data modeling technique 
++ used to represent the relationships between entities in a database system. 
++ It provides a graphical representation of the entities, their attributes, and the relationships between them. 
++ The ER model helps in designing a database schema and provides a clear understanding of the data structure
 + An entity–relationship model (or ER model) describes interrelated things of interest in a specific domain of knowledge.
 + A basic ER model is composed of entity types (which classify the things of interest) and specifies relationships that can exist between entities (instances of those entity types).
 + 4 type of relationship:
@@ -61,3 +95,118 @@ Note: storage engine does affect how server optimize the query
 + **1:1 Relationships**: For instance, let us consider the case where the Person has or optionally has one wife, You can place the primary key of the wife within the table of the Persons.  vice versa to put the personid as a foreign key within the Wife table.
 + **1:N Relationships**: To represent such relationship the personid as the Parent node must be placed within the Child table as a foreign key but not the other way around
 + **N:N Relationships**: Use a separate table as shown below:
+
++ ## Numeric data type
+Numeric data type
+  + Integer: TINYINT(M), SMALLINT(M),MEDIUMINT(M),INT(M),BIGINT(M)
+    + Boolean, bool = inyint(1)
+    + Float
+      + DECIMAL(M, D):
+        + D is the number of digits following the decimal point.
+        + Store exact numeric data values.
+        + Used when it is important to preserve exact precision, for example with monetary data.
+        + Decimal type can avoid rounding
+        + exact representation
+      + Float(M,d), double(m,d)
+        + relatively approximate representation
+        + is suitable for scientific and technical computations
++ Date and Time data type ( DATE , Time, datetime, timestamp, year)
++ String data type: ( char and varchar, binary and var binary)
+
+Other Datatype:
++ BLOB: binary large object that can hold a variable amount of data
++ An ENUM is a string object with a value chosen from a list of permitted values that are enumerated explicitly in the column specification at table creation time.
+  + Can have zero or more value
+
+
+## SQL Commands? (DDL, DML, TCL, DQL, DCL)
++ DDL: is a set of SQL commands used to change data structure like create, modify, and delete database structures but not data
++ DQL: 
+  + Used to get data from the db, and set order on them.
+  + Include SELECT query to get the data from the database.
+  + Return results from SELECT is stored in a table.
+
+## SQL Commands
++ DDL: (Data Definition Language) change the table structures
+  + Modify structures but not data
+  + Create, drop, alter, truncate
++ DQL: (Data Query Language)
+  + Used to get data from the db, and set order on them
+  + Include SELECT query to get the data from the database, return result is stored in a table
+  + SELECT
++ DML: (Data Manipulation Language)
+  + Used to add, delete, or modify records in a table
+  + (  INSERT ,UPDATE ,DELETE ,LOCK ,CALL ,EXPLAIN PLAN)
++ DCL:  Data Control Language
+  + DCL commands handle database system permissions and other controls.
+  + GRANT and REVOKE
++ Transaction Control Language
+  + Commit
+  + Rollback
+  + savepoint
+  + set transaction
+
+## Truncate, delete and drop
++ DML: Deletes one or more existing records from the table in the database.
++ Drops the complete table from the database.
+
+## Constraint
++ used to specify rules for the data in a table
++ used to limit the type of data that can go into a table. 
++ ensures the accuracy and reliability of the data in the table
++ Constraints can be column level or table level
+ 7 constraint (  NOT NULL , UNIQUE , PRIMARY KEY ,FOREIGN KEY , CHECK ,DEFAULT ,CREATE INDEX)
+
+## Primary
++ Primary key: A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
++ Foreign key: Prevents actions that would destroy links between tables
+## Truncate, Delete and drop
+![img_2.png](img_2.png)
+
+## View
++ Store SELECT statement
++ view >< table is view is not considered a real table existed in db
++ Advantage:
+  + Simply complex query
+  + Make the business logic consitence across different applications or systems
+  + Add extra security layer
+  + Enable backward compatibility:  presents the modified data structure while maintaining backward compatibility with the existing application.
+## Join 
+
++ A relational database consists of multiple related tables linking together using foreign key columns. 
++ Information from each table is incomplete from the business perspective
++ To get complete order’s information, you need to query data from both tables. That’s why joins come into the play.
+
+## Subqueries
++ query nested within another query
++ When executing the query, MySQL evaluates the subquery first and uses the result of the subquery for the outer query
++ Subqueries has two type:
+  + Non-Correlated Subqueries: executed independently of the outer query and returns a single value or result set that is used by the outer query
+  + Correlated Subqueries: refers to one or more columns in the outer query and is executed once for each row returned by the outer query
+
+## Join vs subqueries performance
++ A subquery is easier to write, but a join might be better optimized by the server. 
++ For example a Left Outer join typically works faster because servers optimize it
++ Also, on some occasions, it is not only possible to rewrite a query without a subquery, but it can be more efficient to make use of some of these techniques rather than to use subqueries. One of these is the IN() construct
+## Stored Procedured 
+![img.png](img.png)
+
+## Trigger
++ stored procedure in db, which automatically invokes whenever a special event in the db occurs.
++ It is a stored procedure without parameters and return value
++ The SQL standard defines two types of triggers: row-level triggers and statement-level triggers.
+  + A row-level trigger is activated for each row that is inserted, updated, or deleted.
+  + A statement-level trigger is executed once for each transaction regardless of how many rows are inserted, updated, or deleted.
++ When we use trigger:
+  + Check constraints
+  + Ensure data intergrity
+
+## Trigger vs Procedure
+![img_1.png](img_1.png)
+
+## Transaction
++ It is a group of work that is performed sequentially against the database
+  + Change will be successful when transaction commit.
+  + Change won’t be successful when transaction rollback.
++ A transaction start with SQL statement, and it is end when it found COMMIT or ROLLBACK.
+

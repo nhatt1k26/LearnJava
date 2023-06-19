@@ -45,7 +45,7 @@ Issue 1:
         + Start with lowercase letter
         + Use verb or verb phrase decribe the method's action
         + Use camel case instead of using under score
-    + Pakage Name: Use lowercase letter
+    + Package Name: Use lowercase letter
         + Use a reversed domain name to ensure uniqueness
     + Acronyms and Abbreviations:
         + Acronyms should be treated as words (e.g., `XMLParser`).
@@ -111,7 +111,6 @@ Utilities Class - Helper Class
 
 **Map is not inherit in java collection, but provide collection-view operation for user to program easier**
 
-
 HashSet - HashCode
 
 ## Meeting note 6/5/2023
@@ -165,8 +164,6 @@ static + transient
 
 Mục đích : để nhận biết nhau (trước khi serialize và sau khi deserialize).
 
-
-
 final transient có được ghi hay không 
 
 ## Java Predefined-Functional Interfaces
@@ -180,3 +177,6 @@ Hidden method
 + ifPresent
 + isPresent
 + flatmap()
+
+## Meeting note 12/6/2023
++ Cơ chế leftmost prefix

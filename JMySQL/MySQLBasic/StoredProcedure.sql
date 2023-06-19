@@ -34,7 +34,7 @@ END //
 DELIMITER ;
 
 call new_procedure(5);
-
+productsproducts
 SHOW PROCEDURE STATUS ;
 
 drop procedure if exists GetAllProducts;

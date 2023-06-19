@@ -13,7 +13,5 @@ public class ExceptionExp extends ParentClass {
     }
     @Override
     public void doSomething() throws  AtomicMoveNotSupportedException,FileSystemException{
-
     }
-
 }
